@@ -15,6 +15,6 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 **| Knowledge classification | Article | Description |**
-| --- | --- |
+| --- | --- | --- |
 | SFT | LoRA | Show file differences that haven't been staged |
 | Transformer | Attention| Show file differences that haven't been staged |
