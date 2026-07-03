@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-| Knowledge classification | Description |
+**| Knowledge classification | Article | Description |**
 | --- | --- |
-| SFT | LoRA |
-| Transformer | Show file differences that haven't been staged |
+| SFT | LoRA | Show file differences that haven't been staged |
+| Transformer | Attention| Show file differences that haven't been staged |
