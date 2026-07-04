@@ -13,7 +13,7 @@
    这是 目标，不是具体实现方式。
 2. Fine tuning 和 Lora 的关系是什么？
 
-![Fine tuning 和 LoRA 关系](附件/Pasted image 20260703213213.png)
+![Fine tuning 和 LoRA 关系](附件/Pasted-image-20260703213213.png)
 
 3. Adapter tuning 是什么？
 
