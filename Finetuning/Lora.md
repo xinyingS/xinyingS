@@ -3,16 +3,47 @@
 ### 理论
 
 1. SFT 是什么？
-  Supervised Fine-Tuning = 监督微调
-    给模型看很多“输入 → 标准输出”：
-     用户：1+1等于几？
-  助手：2
-  后让模型学会：
+   Supervised Fine-Tuning = 监督微调
+    给模型看很多"输入 → 标准输出"：
+	    用户：1+1等于几？
+		助手：2
+	
+	然后让模型学会：
     看到 user 问题后，输出答案。
-   这是 目标，不是具体实现方式。
+   这是 目标，不是具体实现方式。
 2. Fine tuning 和 Lora 的关系是什么？
 
-3. Adapter tuning 是什么？ ![Adapter tuning](附件/Pasted%20image%20260703213834.png) (1) Adapter tuning 主要思想 target = 原参数 + 新增参数 (2) Adapter tuning 缺点 transformer 结构发生变化，层数加深，训练和推理时间增加 4. Prefix tuning 是什么？ ![Prefix tuning](附件/Pasted%20image%20260703213908.png) (1) Prefix tuning 主要思想 输入新增 γ 个 prefix，γ 可变 (2) Prefix tuning 缺点 占用输入 prompt 长度 5. LoRA 是什么？ LoRA = Low-Rank Adaptation 大模型参数太多，全量训练很贵。 LoRA 的做法是： 原模型权重：冻结 额外加一小层 adapter：训练 像给大模型贴一张 小补丁，只训练补丁。 可用工具： 任务：SFT 方法：LoRA 工具：PEFT 实现 LoRA，TRL 实现 SFTTrainer
+![Fine tuning 和 LoRA 关系](附件/Pasted image 20260703213213.png)
+
+3. Adapter tuning 是什么？
+
+![Adapter tuning](附件/Pasted image 20260703213834.png)
+
+ (1) Adapter tuning 主要思想
+     target = 原参数 + 新增参数 
+ (2) Adapter tuning 缺点
+     transformer 结构发生变化，层数加深，训练和推理时间增加
+4. Prefix tuning 是什么？
+
+![Prefix tuning](附件/Pasted image 20260703213908.png)
+
+ (1) Prefix tuning 主要思想
+    输入新增 γ 个 prefix，γ 可变
+ (2) Prefix tuning 缺点
+    占用输入 prompt 长度
+5. LoRA 是什么？
+	LoRA = Low-Rank Adaptation
+	大模型参数太多，全量训练很贵。  
+	LoRA 的做法是：
+		原模型权重：冻结
+		额外加一小层 adapter：训练
+	像给大模型贴一张 小补丁，只训练补丁。
+	可用工具：
+	任务：SFT
+	方法：LoRA
+	工具：PEFT 实现 LoRA，TRL 实现 SFTTrainer
+
+![LoRA 工具链](附件/Pasted image 20260703214141.png)
 
 核心思想： SVD 奇异值分解（压缩重复参数）
 
