@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 | Knowledge classification | Article | Description |
 | --- | --- | --- |
-| SFT | LoRA | Show file differences that haven't been staged |
-| Transformer | Attention| Show file differences that haven't been staged |
+| LoRA | [Lora](./Finetuning/Lora.md) | LoRA 微调相关笔记 |
+| Transformer | Attention | Show file differences that haven't been staged |
