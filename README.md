@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 | Knowledge classification | Article | Description | Code |
 | --- | --- | --- | --- |
-| LoRA | [Lora](./Finetuning/Lora.md) | LoRA 微调相关笔记 | lora_simeple_code.ipynb |
+| LoRA | [Lora](./Finetuning/Lora.md) | LoRA 微调相关笔记 | [simple_experiment](./Finetuning/lora_colab_experiment.ipynb) |
 | Transformer | Attention | Show file differences that haven't been staged | to be continue |
