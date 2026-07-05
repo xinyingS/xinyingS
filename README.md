@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-| Knowledge classification | Article | Description |
-| --- | --- | --- |
-| LoRA | [Lora](./Finetuning/Lora.md) | LoRA 微调相关笔记 |
-| Transformer | Attention | Show file differences that haven't been staged |
+| Knowledge classification | Article | Description | Code |
+| --- | --- | --- | --- |
+| LoRA | [Lora](./Finetuning/Lora.md) | LoRA 微调相关笔记 | lora_simeple_code.ipynb |
+| Transformer | Attention | Show file differences that haven't been staged | to be continue |
